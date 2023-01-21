@@ -52,18 +52,18 @@ FORCE_SUB_TEXT = environ.get('FORCE_SUB_TEXT', 'Fɪʀsᴛ ᴄʟɪᴄᴋ ᴏɴ R�
 WELCOM_PIC = environ.get("WELCOM_PIC", "https://telegra.ph/file/a0d8eccea7198ed5ac562.jpg")
 WELCOM_TEXT = environ.get("WELCOM_TEXT", "Hai {user}\nwelcome to {chat}")
 PMFILTER = environ.get("PMFILTER", True)
-G_FILTER = environ.get("G_FILTER", True))
+G_FILTER = environ.get("G_FILTER", True)
 BUTTON_LOCK = environ.get("BUTTON_LOCK", True)
 
 # Others
 SHORTLINK_URL = environ.get('SHORTLINK_URL', '')
 SHORTLINK_API = environ.get('SHORTLINK_API', '')
-IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
+IS_SHORTLINK = environ.get('IS_SHORTLINK', False)
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '').split()]
-IMDB_DELET_TIME = int(environ.get('IMDB_DELET_TIME', "300"))
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001894541844'))
+IMDB_DELET_TIME = environ.get('IMDB_DELET_TIME', "300")
+LOG_CHANNEL = environ.get('LOG_CHANNEL', '-1001894541844')
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'vp_supportgroup')
-P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
+P_TTI_SHOW_OFF = is_enabled(environ.get('P_TTI_SHOW_OFF', "True"), True)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "{file_name}")
